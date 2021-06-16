@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  </div>
+  <div class="w3-bar-block">
+    <h1 style="margin-left: 15px;">Portfolio</h1> <br> <br> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Iris Flores Simpauco</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Me</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+<!--<p><b>The best team in the world.</b></p>-->  
+    <p>Hello! I am a student based in Hamilton studying Bachelor of Applied Information Technology at Waikato Institute of Technology,
+    currently in my second year specialising in Network Engineering. I started off with taking the Certificate course in Computing back in 2019 where I renewed
+    my interest in the Tech industry, eventually moving up to Diploma, then to where I am today.</p>
+    <p>I have always had a knack for hardware and tinkering as well as
+    troubleshooting, which is why I highly enjoyed IT Operations, Operating Systems and Introduction to Networking in my previous semesters. 
+    I aim to be in the Networking and Cyber Security fields in the future, or anywhere I get to be hands-on with my work.
+    There is still so much I want to learn and it's exciting knowing that I will always be in the ever-growing world of technology.</p>
+
+  </div>
+
+  <!-- Projects -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>My Projects</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+<!--<p><b>Projects</b></p>-->
+    <p>I did MySQL Reporting as part of module INFO601, showcasing my code and queries for one of the assignments using SQL Developer. 
+      The Network Topology was made in Cisco Packet Tracer and used for INFO602 as part of a group project where I handled one of its roles as the Network Engineer
+      — it consists of configured servers, routers, switches and PCs to virtually represent different departments in the company building.
+      I have also made a hotel website for module COMP602 using HTML5, CSS3 and JavaScript on Visual Studio Code.
+    </p>
+    <br>
+  </div>
+
+  <!-- SQL -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>MySQL Reporting</h3>
+          <p class="w3-opacity">On SQL Developer</p>
+          <p>Coded in MySQL</p>
+          <img src= "./sql.jpg" width=100% height="135vh">
+        </div>
+      </div>
+    </div>
+
+    <!-- Topology -->
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Network Topology</h3>
+          <p class="w3-opacity">On Cisco Packet Tracer</p>
+          <p>Configured using command line interface</p>
+          <img src= "./topology.jpg" width=100%>
+        </div>
+      </div>
+    </div>
+
+    <!-- Website -->
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Hotel Website</h3>
+          <p class="w3-opacity">On Visual Studio Code</p>
+          <p>Coded in HTML5, CSS3 and JavaScript</p>
+          <img src= "./website.jpg" width=100% height="135vh">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact Me</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Fill out below to get in touch!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
